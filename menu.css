@@ -1,0 +1,604 @@
+/* ==========================================
+   ROASTÉ & BUTTER - Printed Café Menu Styling
+   Boutique European Bistro / Editorial Style
+   ========================================== */
+
+:root {
+    --bg-paper: #F4EBDD;
+    --bg-light: #FAF7F0;
+    --text-dark: #30271F;
+    --coffee-brown: #65452F;
+    --reddish-brown: #98634B;
+    --gold-muted: #B69A70;
+    --border-line: #D8C9B6;
+    --font-hebrew: 'Rubik', Arial, sans-serif;
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-crest: 'Cinzel', serif;
+}
+
+/* Base Web Setup */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #2b2622;
+    color: var(--text-dark);
+    font-family: var(--font-hebrew);
+    direction: rtl;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+
+/* Standard Site Header & Nav for Website Integration */
+.site-header {
+    background-color: #30271F;
+    color: #F4EBDD;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 3px solid var(--gold-muted);
+}
+.site-logo {
+    font-family: var(--font-serif);
+    font-size: 32px;
+    margin: 0 0 5px;
+    letter-spacing: 2px;
+    color: #FAF7F0;
+}
+.site-tagline {
+    font-size: 14px;
+    color: var(--gold-muted);
+    margin: 0;
+}
+.site-nav {
+    background-color: #241D17;
+    padding: 12px 20px;
+}
+.site-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 0;
+    margin: 0;
+}
+.site-nav a {
+    color: #F4EBDD;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 6px 10px;
+    transition: all 0.3s ease;
+}
+.site-nav a:hover, .site-nav a.active {
+    color: var(--gold-muted);
+    border-bottom: 2px solid var(--gold-muted);
+}
+#menuButton {
+    display: none;
+    background: var(--coffee-brown);
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 0 auto;
+}
+
+.site-footer {
+    background-color: #1a1512;
+    color: var(--border-line);
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+    border-top: 2px solid var(--gold-muted);
+}
+
+/* Container around the printed card */
+.menu-page-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* The Printed Card Component */
+.menu-card {
+    background-color: var(--bg-paper);
+    /* Layered subtle paper texture using gradients */
+    background-image: 
+        radial-gradient(#98634B 0.5px, transparent 0.5px),
+        linear-gradient(to bottom, rgba(255,255,255,0.4), rgba(244,235,221,0.8));
+    background-size: 20px 20px, 100% 100%;
+    color: var(--text-dark);
+    padding: 50px 45px;
+    border-radius: 4px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4), 0 0 0 1px #D8C9B6;
+    position: relative;
+    box-sizing: border-box;
+    border: 12px solid #F4EBDD;
+    outline: 2px solid var(--gold-muted);
+    outline-offset: -8px;
+}
+
+/* Decorative Corner Ornaments */
+.menu-corner-ornament {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-color: var(--reddish-brown);
+    border-style: solid;
+    pointer-events: none;
+}
+.top-left { top: 12px; left: 12px; border-width: 2px 0 0 2px; }
+.top-right { top: 12px; right: 12px; border-width: 2px 2px 0 0; }
+.bottom-left { bottom: 12px; left: 12px; border-width: 0 0 2px 2px; }
+.bottom-right { bottom: 12px; right: 12px; border-width: 0 2px 2px 0; }
+
+/* Menu Header Styling */
+.menu-header {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+.brand-crest {
+    margin-bottom: 10px;
+}
+.menu-title {
+    font-family: var(--font-serif);
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--coffee-brown);
+    letter-spacing: 3px;
+    margin: 0;
+    text-transform: uppercase;
+}
+.menu-subtitle-en {
+    font-family: var(--font-crest);
+    font-size: 13px;
+    letter-spacing: 4px;
+    color: var(--reddish-brown);
+    margin-top: 4px;
+    text-transform: uppercase;
+}
+.menu-slogan {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 16px;
+    color: var(--gold-muted);
+    margin: 8px 0 16px 0;
+}
+
+/* Ornaments */
+.menu-divider-ornament {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px auto;
+    max-width: 300px;
+}
+.menu-divider-ornament .line {
+    flex: 1;
+    height: 1px;
+    background-color: var(--gold-muted);
+}
+.menu-divider-ornament .diamond {
+    color: var(--reddish-brown);
+    font-size: 10px;
+}
+
+.menu-heading-main {
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin: 15px 0 0 0;
+    letter-spacing: 1px;
+}
+
+/* Two-Column Grid Layout */
+.menu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+/* Sections */
+.menu-section {
+    background: rgba(250, 247, 240, 0.65);
+    border: 1px solid var(--border-line);
+    padding: 22px 20px;
+    margin-bottom: 30px;
+    border-radius: 3px;
+    position: relative;
+    box-shadow: 0 2px 6px rgba(101, 69, 47, 0.04);
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.section-header h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--coffee-brown);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+}
+.section-header .en-sub {
+    font-family: var(--font-serif);
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--reddish-brown);
+    margin-right: auto;
+    letter-spacing: 1px;
+}
+.section-icon {
+    font-size: 18px;
+}
+
+.section-divider {
+    height: 2px;
+    background: linear-gradient(to left, transparent, var(--gold-muted), transparent);
+    margin: 10px 0 14px 0;
+}
+
+.section-note {
+    font-size: 12px;
+    color: var(--reddish-brown);
+    font-style: italic;
+    margin: -6px 0 16px 0;
+    border-right: 2px solid var(--gold-muted);
+    padding-right: 8px;
+}
+
+/* Item List & Typography */
+.menu-items-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+
+.item-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.item-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin: 0;
+    white-space: nowrap;
+}
+
+.item-en {
+    font-family: var(--font-serif);
+    font-size: 13px;
+    font-weight: 400;
+    color: #7a6858;
+    margin-right: 4px;
+}
+
+.item-dots {
+    flex: 1;
+    border-bottom: 1px dotted var(--border-line);
+    margin: 0 6px;
+    position: relative;
+    top: -4px;
+}
+
+.item-price {
+    font-family: var(--font-hebrew);
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--coffee-brown);
+    white-space: nowrap;
+    direction: ltr;
+}
+
+.item-desc {
+    font-size: 13px;
+    color: #55483c;
+    line-height: 1.45;
+    margin: 4px 0 0 0;
+}
+
+/* Footer Section */
+.menu-footer {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 15px;
+    position: relative;
+}
+.footer-notice {
+    font-size: 13px;
+    color: var(--reddish-brown);
+    margin: 5px 0;
+}
+.footer-thanks {
+    font-family: var(--font-serif);
+    font-size: 15px;
+    font-style: italic;
+    color: var(--coffee-brown);
+    margin: 5px 0;
+}
+
+/* Responsive Styles for Web / Mobile */
+@media (max-width: 850px) {
+    .menu-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .menu-card {
+        padding: 30px 20px;
+        border-width: 6px;
+    }
+    .menu-title {
+        font-size: 30px;
+    }
+    .item-header {
+        flex-wrap: wrap;
+    }
+    .item-dots {
+        display: none;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    /* Header */
+    .site-header {
+        padding: 15px 10px;
+    }
+
+    .site-logo {
+        font-size: 25px;
+    }
+
+    .site-tagline {
+        font-size: 12px;
+    }
+
+    /* Mobile Navigation */
+    .site-nav {
+        padding: 12px;
+    }
+
+    #menuButton {
+        display: block;
+    }
+
+    .site-nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding-top: 12px;
+    }
+
+    .site-nav ul.hidden {
+        display: none;
+    }
+
+    /* Menu Container */
+    .menu-page-container {
+        margin: 20px auto;
+        padding: 0 10px;
+    }
+
+    .menu-card {
+        padding: 25px 14px;
+        border-width: 5px;
+    }
+
+    /* Menu Heading */
+    .menu-header {
+        margin-bottom: 25px;
+    }
+
+    .menu-title {
+        font-size: 25px;
+        letter-spacing: 1px;
+    }
+
+    .menu-subtitle-en {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .menu-slogan {
+        font-size: 14px;
+    }
+
+    .menu-heading-main {
+        font-size: 22px;
+    }
+
+    /* Menu Sections */
+    .menu-section {
+        padding: 16px 12px;
+        margin-bottom: 20px;
+    }
+
+    .section-header h2 {
+        font-size: 17px;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .section-header .en-sub {
+        font-size: 11px;
+        margin-right: 0;
+    }
+
+    .section-icon {
+        font-size: 16px;
+    }
+
+    /* Menu Items */
+    .menu-items-list {
+        gap: 18px;
+    }
+
+    .item-header {
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .item-title {
+        font-size: 14px;
+        white-space: normal;
+        flex: 1;
+        min-width: 0;
+    }
+
+    .item-en {
+        font-size: 11px;
+    }
+
+    .item-price {
+        font-size: 14px;
+        flex-shrink: 0;
+    }
+
+    .item-desc {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    .section-note {
+        font-size: 11px;
+        line-height: 1.5;
+    }
+
+    /* Footer */
+    .site-footer {
+        padding: 20px 12px;
+        margin-top: 25px;
+    }
+
+    .footer-notice {
+        font-size: 11px;
+        line-height: 1.5;
+    }
+
+    .footer-thanks {
+        font-size: 13px;
+    }
+}
+
+
+/* ==========================================
+   PRINT STYLESHEET (@media print)
+   Optimized for A4 Print / PDF Export
+   ========================================== */
+@media print {
+    /* Hide site elements not needed on paper */
+    .site-header,
+    .site-nav,
+    .site-footer,
+    #menuButton {
+        display: none !important;
+    }
+
+    /* Reset Body & Container for A4 Printing */
+    body {
+        background: #ffffff !important;
+        color: #111111 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        direction: rtl !important;
+    }
+
+    .menu-page-container {
+        max-width: 100% !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* Print Paper Card styling */
+    .menu-card {
+        background-color: #F4EBDD !important;
+        background-image: none !important;
+        box-shadow: none !important;
+        border: 4pt solid #B69A70 !important;
+        outline: 1pt solid #98634B !important;
+        outline-offset: -4pt !important;
+        padding: 12mm 15mm !important;
+        margin: 0 !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+        page-break-after: always;
+        break-after: page;
+    }
+
+    /* Maintain Grid in Print */
+    .menu-grid {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 15mm !important;
+    }
+
+    .menu-section {
+        background: rgba(250, 247, 240, 0.85) !important;
+        border: 1px solid #D8C9B6 !important;
+        padding: 10pt 12pt !important;
+        margin-bottom: 12pt !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+    }
+
+    .menu-item {
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+    }
+
+    .menu-header {
+        margin-bottom: 15pt !important;
+        page-break-after: avoid !important;
+        break-after: avoid !important;
+    }
+
+    .menu-title {
+        font-size: 28pt !important;
+        color: #65452F !important;
+    }
+
+    .menu-heading-main {
+        font-size: 18pt !important;
+    }
+
+    .item-title {
+        font-size: 11pt !important;
+    }
+
+    .item-price {
+        font-size: 11pt !important;
+        color: #65452F !important;
+    }
+
+    .item-desc {
+        font-size: 9pt !important;
+        color: #443322 !important;
+    }
+
+    /* Prevent orphan headers */
+    h2, h3, .section-header {
+        page-break-after: avoid !important;
+        break-after: avoid !important;
+    }
+}
