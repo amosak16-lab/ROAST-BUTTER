@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>תפריט מודפס | ROASTÉ & BUTTER</title>
+    <!-- Google Fonts for European / Editorial feel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+
+    <!-- Bar for web navigation -->
+    <header class="site-header">
+        <div class="site-header-inner">
+            <h1 class="site-logo"><bdi lang="en" dir="ltr">ROASTÉ &amp; BUTTER</bdi></h1>
+            <p class="site-tagline"><bdi lang="en" dir="ltr">Roasted with care. Baked with love.</bdi></p>
+        </div>
+    </header>
+
+    <nav class="site-nav">
+        <button id="menuButton" aria-label="פתיחת תפריט" aria-expanded="false">☰</button>
+        <ul id="navMenu">
+            <li><a href="index.html">ראשי</a></li>
+            <li><a href="about.html">הסיפור שלנו</a></li>
+            <li><a href="bakery.html">מאפייה והקונדיטוריה</a></li>
+            <li><a href="coffee.html">בית הקלייה</a></li>
+            <li><a href="menu.html" class="active">התפריט שלנו</a></li>
+            <li><a href="contact.html">צור קשר</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Printed Menu Card Canvas -->
+    <main class="menu-page-container">
+        <div class="menu-card" id="printable-menu">
+            
+            <!-- Menu Header Header -->
+            <header class="menu-header">
+                <div class="menu-corner-ornament top-left"></div>
+                <div class="menu-corner-ornament top-right"></div>
+                
+                <div class="brand-crest">
+                    <svg class="crest-icon" viewBox="0 0 64 64" width="48" height="48">
+                        <path fill="#98634B" d="M32,4 C36,4 40,8 40,14 C40,18 36,22 32,22 C28,22 24,18 24,14 C24,8 28,4 32,4 Z M32,8 C30,8 28,10 28,14 C28,16 30,18 32,18 C34,18 36,16 36,14 C36,10 34,8 32,8 Z"/>
+                        <path fill="#B69A70" d="M16,26 Q32,18 48,26 Q56,38 48,52 Q32,60 16,52 Q8,38 16,26 Z M32,28 C22,34 22,46 32,50 C42,46 42,34 32,28 Z"/>
+                        <circle cx="32" cy="39" r="3" fill="#65452F"/>
+                    </svg>
+                </div>
+                
+                <h1 class="menu-title"><bdi lang="en" dir="ltr">ROASTÉ &amp; BUTTER</bdi></h1>
+                <div class="menu-subtitle-en"><bdi lang="en" dir="ltr">Boutique Roastery &amp; Artisan Bakery</bdi></div>
+                <p class="menu-slogan"><bdi lang="en" dir="ltr">Roasted with care. Baked with love.</bdi></p>
+                
+                <div class="menu-divider-ornament">
+                    <span class="line"></span>
+                    <span class="diamond">◆</span>
+                    <span class="line"></span>
+                </div>
+                <h2 class="menu-heading-main">התפריט שלנו</h2>
+            </header>
+
+            <!-- Menu Content Layout: 2 Columns -->
+            <div class="menu-grid">
+                
+                <!-- RIGHT COLUMN -->
+                <div class="menu-column">
+                    
+                    <!-- Section A: Hot Coffee -->
+                    <section class="menu-section">
+                        <div class="section-header">
+                            <span class="section-icon">☕</span>
+                            <h2>קפה חם <span class="en-sub"><bdi lang="en" dir="ltr">HOT COFFEE</bdi></span></h2>
+                        </div>
+                        <div class="section-divider"></div>
+                        <p class="section-note">נקלה במקום מדי שבוע מתערובות מובחרות מאיטליה, אתיופיה וקולומביה</p>
+
+                        <div class="menu-items-list">
+                            <article class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-title">אספרסו קצר / ארוך <span class="item-en"><bdi lang="en" dir="ltr">Espresso</bdi></span></h3>
+                                    <div class="item-dots"></div>
+                                    <span class="item-price">₪12</span>
+                                </div>
+                                <p class="item-desc">תערובת הבית בעלת גוף מלא, קטיפתי וניחוחות שוקולד חריף</p>
+                            </article>
+
+                            <article class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-title">אספרסו כפול <span class="item-en"><bdi lang="en" dir="ltr">Double Espresso</bdi></span></h3>
+                                    <div class="item-dots"></div>
+                                    <span class="item-price">₪14</span>
+                                </div>
+                                <p class="item-desc">מנה כפולה של תערובת זנים מובחרים עם קרמה עשירה וזהובה</p>
+                            </article>
+
+                            <article class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-title">אמריקנו <span class="item-en"><bdi lang="en" dir="ltr">Americano</bdi></span></h3>
+                                    <div class="item-dots"></div>
+                                    <span class="item-price">₪15</span>
+                                </div>
+                                <p class="item-desc">אספרסו כפול מדולל במים חמים, טעם מאוזן ועדין</p>
+                            </article>
+
+                            <article class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-title">קפוצ'ינו איטלקי <span class="item-en"><bdi lang="en" dir="ltr">Cappuccino</bdi></span></h3>
+                                    <div class="item-dots"></div>
+                                    <span class="item-price">₪17 / ₪19</span>
+                                </div>
+                                <p class="item-desc">אספרסו עשיר עם חלב מוקצף במרקם משי קטיפתי</p>
+                            </article>
+
+                            <article class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-title">לאטה מאקיאטו <span class="item-en"><bdi lang="en" dir="ltr">Caffè Latte</bdi></span></h3>
+                                    <div class="item-dots"></div>
+                                    <span class="item-price">₪18</span>
+                                </div>
+                                <p class="item-desc">חלב חם מעודן עם שכבת אספרסו כפול וקצף עדין</p>
+                            </article>
+
+                            <article class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-title">פלאט וייט <span class="item-en"><bdi lang="en" dir="ltr">Flat White</bdi></span></h3>
+                                    <div class="item-dots"></div>
+                                    <span class="item-price">₪18</span>
+                                </div>
+                                <p class="item-desc">כפול ריסטרטו עוצמתי עם מיקרו-קצף חלב הדוק בסגנון אוסטרלי</p>
+                            </article>
+
+                            <article class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-title">מוקה שוקולד <span class="item-en"><bdi lang="en" dir="ltr">Caffè Mocha</bdi></span></h3>
+                                    <div class="item-dots"></div>
+                                    <span class="item-price">₪21</span>
+                                </div>
+                                <p class="item-desc">אספרסו, גנאש שוקולד בלגי מריר וחלב מוקצף בחום גבוה</p>
+                            </article>
+
+                            <article class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-title">אספרסו מקיאטו <span class="item-en"><bdi lang="en" dir="ltr">Espresso Macchiato</bdi></span></h3>
+                                    <div class="item-dots"></div>
+                                    <span class="item-price">₪14</span>
+                                </div>
+                                <p class="item-desc">מילת הקסם האיטלקית: אספרסו קצר מעוטר בנגיעת קצף חלב</p>
+                            </article>
+                        </div>
+                    </section>
+
+                    <!-- Section B: Cold Drinks -->
+                    <section class="menu-section">
+                        <div class="section-header">
+                            <span class="section-icon">🥤</span>
+                            <h2>משקאות קרים <span class="en-sub"><bdi lang="en" dir="ltr">COLD DRINKS</bdi></span></h2>
+                        </div>
+                        <div class="section-divider"></div>
+
+                        <div class="menu-items-list">
+                            <article class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-title">אייס לאטה מיוחד <span class="item-en"><bdi lang="en" dir="ltr">Iced Latte</bdi></span></h3>
+                                    <div class="item-dots"></div>
+                                    <span class="item-price">₪20</span>
+                                </div>
+                                <p class="item-desc">אספרסו כפול נמזג על חלב צונן וקרח גרוס מרענן</p>
+                            </article>
+
+                            <article class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-title">אייס אמריקנו <span class="item-en"><bdi lang="en" dir="ltr">Iced Americano</bdi></span></h3>
+                                    <div class="item-dots"></div>
+                                    <span class="item-price">₪17</span>
+                                </div>
+                                <p class="item-desc">מנות אספרסו כפולות על מים מסוננים קרים וקרח</p>
+                            </article>
+
+                            <article class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-title">קולד ברו בחליטה קרה <span class="item-en"><bdi lang="en" dir="ltr">Cold Brew</bdi></span></h3>
+                                    <div class="item-dots"></div>
+                                    <span class="item-price">₪22</span>
+                                </div>
+                                <p class="item-desc">חליטה קרה איטית של 16 שעות מחד-זני קולומביאני, חלק ומתקתק</p>
+                            </article>
+
+                            <article class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-title">פרפה קפה וסילאן <span class="item-en"><bdi lang="en" dir="ltr">Coffee Frappé</bdi></span></h3>
+                                    <div class="item-dots"></div>
+                                    <span class="item-price">₪24</span>
+                                </div>
+                                <p class="item-desc">קפה מוערבל עם חלב, נגיעת סילאן טבעי ושברי אגוזי לוז</p>
+                            </article>
+
+                            <article class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-title">לימונדה נענע סחוטה <span class="item-en"><bdi lang="en" dir="ltr">Fresh Lemonade</bdi></span></h3>
+                                    <div class="item-dots"></div>
+                                    <span class="item-price">₪16</span>
+                                </div>
+                                <p class="item-desc">לימונים טריים שנסחטו הבוקר עם עלי נענע רעננים</p>
+                            </article>
+
+                            <article class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-title">תה קר אפרסק וטימין <span class="item-en"><bdi lang="en" dir="ltr">Iced Herbal Tea</bdi></span></h3>
+                                    <div class="item-dots"></div>
+                                    <span class="item-price">₪18</span>
+                                </div>
+                                <p class="item-desc">חליטת צמחים ביתית, תמצית אפרסק טבעית וענף טימין טרי</p>
+                            </article>
+                        </div>
+                    </section>
+
+                    <!-- Section F: Fresh Bakery -->
+                    <section class="menu-section">
+                        <div class="section-header">
+                            <span class="section-icon">🥐</span>
+                            <h2>מאפייה מיוחדת <span class="en-sub"><bdi lang="en" dir="ltr">FRESH BAKERY</bdi></span></h2>
+                        </div>
+                        <div class="section-divider"></div>
+                        <p class="section-note">כל המאפים נאפים במקום מדי בוקר עם חמאת צרפתית איכותית 82%</p>
+
+                        <div class="menu-items-list">
+                            <article class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-title">קרואסון חמאה קלאסי <span class="item-en"><bdi lang="en" dir="ltr">Butter Croissant</bdi></span></h3>
+                                    <div class="item-dots"></div>
+                                    <span class="item-price">₪16</span>
+                                </div>
+                                <p class="item-desc">עלים פריכים, פנים אוורירי ורך בעבודת יד מסורתית</p>
+                            </article>
+
+                            <article class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-title">קרואסון שקדים <span class="item-en"><bdi lang="en" dir="ltr">Almond Croissant</bdi></span></h3>
+                                    <div class="item-dots"></div>
+                                    <span class="item-price">₪22</span>
+                                </div>
+                                <p class="item-desc">ממולא בקרם פרנג'יפאן שקדים עשיר, מצופה שבבי שקדים קלויים</p>
+                            </article>
+
+                            <article class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-title">קרואסון שוקולד בלגי <span class="item-en"><bdi lang="en" dir="ltr">Pain au Chocolat</bdi></span></h3>
+                                    <div class="item-dots"></div>
+                                    <span class="item-price">₪19</span>
+                                </div>
+                                <p class="item-desc">בצק עלים מוזהב עם שתי מוטות שוקולד מריר איכותי 70%</p>
+                            </article>
+
+                            <article class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-title">בריוש קינמון וסוכר חום <span class="item-en"><bdi lang="en" dir="ltr">Cinnamon Brioche</bdi></span></h3>
+                                    <div class="item-dots"></div>
+                                    <span class="item-price">₪18</span>
+                                </div>
+                                <p class="item-desc">מאפה בריוש רך, מפותל בקינמון ציילון וגלזורה עדינה</p>
+                            </article>
+
+                            <article class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-title">מאפה גבינות ותרד <span class="item-en"><bdi lang="en" dir="ltr">Cheese &amp; Spinach Pastry</bdi></span></h3>
+                                    <div class="item-dots"></div>
+                                    <span class="item-price">₪24</span>
+                                </div>
+                                <p class="item-desc">בצק עלים פריך במילוי גבינת פטה, קשקבל ותרד טרי</p>
+                            </article>
+
+                            <article class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-title">מאפה מלוח משתנה <span class="item-en"><bdi lang="en" dir="ltr">Daily Savory Special</bdi></span></h3>
+                                    <div class="item-dots"></div>
+                                    <span class="item-price">₪24</span>
+                                </div>
+                                <p class="item-desc">מאפה הבוקר של השף – שאלו את האופה על המאפה של היום</p>
+                            </article>
+                        </div>
+                    </section>
+
+                </div>
+
+                <!-- LEFT COLUMN -->
+                <div class="menu-column">
+
+                    <!-- Section C: Breakfast -->
+                    <section class="menu-section">
+                        <div class="section-header">
+                            <span class="section-icon">🍳</span>
+                            <h2>ארוחות בוקר <span class="en-sub"><bdi lang="en" dir="ltr">BREAKFAST</bdi></span></h2>
+                        </div>
+                        <div class="section-divider"></div>
+
+                        <div class="menu-items-list">
+                            <article class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-title">ארוחת בוקר זוגית של הבית <span class="item-en"><bdi lang="en" dir="ltr">Grand Breakfast</bdi></span></h3>
+                                    <div class="item-dots"></div>
+                                    <span class="item-price">₪138</span>
+                                </div>
+                                <p class="item-desc">4 ביצים לבחירה, מטבלים ביתיים, גבינות מובחרות, סלט קצוץ, סלסילת לחמי מחמצת טריים, קרואסונים חמים, מיץ טרי וקפה חם לכל סועד</p>
+                            </article>
+
+                            <article class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-title">ארוחת בוקר אישית <span class="item-en"><bdi lang="en" dir="ltr">Classic Solo Breakfast</bdi></span></h3>
+                                    <div class="item-dots"></div>
+                                    <span class="item-price">₪72</span>
+                                </div>
+                                <p class="item-desc">2 ביצים לפי לבחירתכם, 5 מטבלי הבית, סלט אישי רענן, לחם מחמצת בעבודת יד ושתייה חמה או קרה</p>
+                            </article>
+
+                            <article class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-title">שקשוקה קלאסית מרקנית <span class="item-en"><bdi lang="en" dir="ltr">Shakshuka Classic</bdi></span></h3>
+                                    <div class="item-dots"></div>
+                                    <span class="item-price">₪58</span>
+                                </div>
+                                <p class="item-desc">רוטב עגבניות תמר צלויות, פלפלים, שום, תבלינים גליליים ו-2 ביצי משק. מוגש עם לחם מחמצת וטחינה חמה</p>
+                            </article>
+
+                            <article class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-title">שקשוקה ירוקה ומפנקת <span class="item-en"><bdi lang="en" dir="ltr">Green Shakshuka</bdi></span></h3>
+                                    <div class="item-dots"></div>
+                                    <span class="item-price">₪64</span>
+                                </div>
+                                <p class="item-desc">תרד בר, מנגולד, שמנת, מעט שום, גבינת עיזים נמסת ו-2 ביצי משק. מוגש עם חלה חמה</p>
+                            </article>
+
+                            <article class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-title">טוסט גבינות עשיר <span class="item-en"><bdi lang="en" dir="ltr">Three-Cheese Toast</bdi></span></h3>
+                                    <div class="item-dots"></div>
+                                    <span class="item-price">₪48</span>
+                                </div>
+                                <p class="item-desc">לחם מחמצת קלוי, גאודה מיושנת, מוצרלה, גבינת שמנת, עגבנייה וזיתי קלמטה. מוגש עם סלט ירוק</p>
+                            </article>
+
+                            <article class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-title">ארוחת בוקר קלה <span class="item-en"><bdi lang="en" dir="ltr">Light Morning Bowl</bdi></span></h3>
+                                    <div class="item-dots"></div>
+                                    <span class="item-price">₪42</span>
+                                </div>
+                                <p class="item-desc">יוגורט יווני סמיך, גרנולה ביתית שנאפתה בדבש, פירות העונה וסילאן טבעי</p>
+                            </article>
+                        </div>
+                    </section>
+
+                    <!-- Section D: Sandwiches -->
+                    <section class="menu-section">
+                        <div class="section-header">
+                            <span class="section-icon">🥪</span>
+                            <h2>כריכים ומנות קלות <span class="en-sub"><bdi lang="en" dir="ltr">SANDWICHES</bdi></span></h2>
+                        </div>
+                        <div class="section-divider"></div>
+
+                        <div class="menu-items-list">
+                            <article class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-title">כריך קפרזה כפרי <span class="item-en"><bdi lang="en" dir="ltr">Caprese Baguette</bdi></span></h3>
+                                    <div class="item-dots"></div>
+                                    <span class="item-price">₪46</span>
+                                </div>
+                                <p class="item-desc">ג'באת מחמצת, מוצרלה פרסקה, עגבניות תמר, פסטו בזיליקום ביתי ובלסמי מצומצם</p>
+                            </article>
+
+                            <article class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-title">כריך גבינת עיזים וסלק <span class="item-en"><bdi lang="en" dir="ltr">Goat Cheese &amp; Beetroot</bdi></span></h3>
+                                    <div class="item-dots"></div>
+                                    <span class="item-price">₪48</span>
+                                </div>
+                                <p class="item-desc">לחם דגנים, פרוסות גבינת עיזים צלויות, סלק אפוי, אגוזי מלך ועלי רוקט</p>
+                            </article>
+
+                            <article class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-title">כריך ירקות קלויים <span class="item-en"><bdi lang="en" dir="ltr">Roasted Veggie Sandwich</bdi></span></h3>
+                                    <div class="item-dots"></div>
+                                    <span class="item-price">₪44</span>
+                                </div>
+                                <p class="item-desc">לחם מחמצת כפרי, חצילים צלויים, פלפלים קלויים, ממרח ארטישוק וטחינה גולמית</p>
+                            </article>
+
+                            <article class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-title">כריך סלמון מעושן <span class="item-en"><bdi lang="en" dir="ltr">Smoked Salmon Bagel</bdi></span></h3>
+                                    <div class="item-dots"></div>
+                                    <span class="item-price">₪52</span>
+                                </div>
+                                <p class="item-desc">בייגל ניו-יורקי, סלמון מעושן איכותי, גבינת שמנת עירית, צלפים ופרוסות מלפפון</p>
+                            </article>
+                        </div>
+                    </section>
+
+                    <!-- Section E: Salads -->
+                    <section class="menu-section">
+                        <div class="section-header">
+                            <span class="section-icon">🥗</span>
+                            <h2>סלטים רעננים <span class="en-sub"><bdi lang="en" dir="ltr">SALADS</bdi></span></h2>
+                        </div>
+                        <div class="section-divider"></div>
+
+                        <div class="menu-items-list">
+                            <article class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-title">סלט הבית ROASTÉ <span class="item-en"><bdi lang="en" dir="ltr">House Signature Salad</bdi></span></h3>
+                                    <div class="item-dots"></div>
+                                    <span class="item-price">₪56</span>
+                                </div>
+                                <p class="item-desc">תערובת עלים צעירים, אגסים שיכורים ביין, גבינת רוקפור, חמוציות ואגוזי פקאן קלויים ברוטב ויניגרט הדרים</p>
+                            </article>
+
+                            <article class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-title">סלט ים תיכוני אסלי <span class="item-en"><bdi lang="en" dir="ltr">Mediterranean Salad</bdi></span></h3>
+                                    <div class="item-dots"></div>
+                                    <span class="item-price">₪52</span>
+                                </div>
+                                <p class="item-desc">עגבניות שרי צבעוניות, מלפפון חתוך גס, זיתי קלמטה, בצל סגול, גבינת פטה יוונית, שמן זית קורנייקי וסומק</p>
+                            </article>
+
+                            <article class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-title">סלט עונתי רענן <span class="item-en"><bdi lang="en" dir="ltr">Seasonal Harvest Salad</bdi></span></h3>
+                                    <div class="item-dots"></div>
+                                    <span class="item-price">₪54</span>
+                                </div>
+                                <p class="item-desc">ירקות שורש פריכים, קינואה אדומה, חמוציות, עשבי תיבול טריים, שבבי שקדים וויניגרט לימון ושמן זית</p>
+                            </article>
+                        </div>
+                    </section>
+
+                    <!-- Section G: Desserts -->
+                    <section class="menu-section">
+                        <div class="section-header">
+                            <span class="section-icon">🍰</span>
+                            <h2>קינוחים מוקפדים <span class="en-sub"><bdi lang="en" dir="ltr">DESSERTS</bdi></span></h2>
+                        </div>
+                        <div class="section-divider"></div>
+
+                        <div class="menu-items-list">
+                            <article class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-title">עוגת גבינה ניו-יורק <span class="item-en"><bdi lang="en" dir="ltr">NY Cheesecake</bdi></span></h3>
+                                    <div class="item-dots"></div>
+                                    <span class="item-price">₪36</span>
+                                </div>
+                                <p class="item-desc">עוגת גבינה אפויה עשירה על תחתית פירורי סבלה, מוגשת עם קולי פירות יער</p>
+                            </article>
+
+                            <article class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-title">טארט שוקולד וסלטיד קרמל <span class="item-en"><bdi lang="en" dir="ltr">Salted Caramel Tart</bdi></span></h3>
+                                    <div class="item-dots"></div>
+                                    <span class="item-price">₪38</span>
+                                </div>
+                                <p class="item-desc">קלתית פריכה, גנאש שוקולד מריר 70%, קרמל מלוח ופתיתי מלח אטלנטי</p>
+                            </article>
+
+                            <article class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-title">עוגת היום של הקונדיטור <span class="item-en"><bdi lang="en" dir="ltr">Pastry Chef Special</bdi></span></h3>
+                                    <div class="item-dots"></div>
+                                    <span class="item-price">₪36</span>
+                                </div>
+                                <p class="item-desc">שאלו את המלצר על היצירה המתוקה המיוחדת של הבוקר</p>
+                            </article>
+
+                            <article class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-title">טירמיסו איטלקי קלאסי <span class="item-en"><bdi lang="en" dir="ltr">Classic Tiramisù</bdi></span></h3>
+                                    <div class="item-dots"></div>
+                                    <span class="item-price">₪34</span>
+                                </div>
+                                <p class="item-desc">בישקוטים ספוגים באספרסו הבית, קרם מסקרפונה אוורירי ואבקת קקאו הולנדי</p>
+                            </article>
+                        </div>
+                    </section>
+
+                </div>
+
+            </div>
+
+            <!-- Menu Footer Footer -->
+            <footer class="menu-footer">
+                <div class="menu-divider-ornament">
+                    <span class="line"></span>
+                    <span class="diamond">◆</span>
+                    <span class="line"></span>
+                </div>
+                <p class="footer-notice">כל המחירים כוללים מע"מ | נשמח להתאים מנות לפי העדפותיכם</p>
+                <p class="footer-thanks">תודה שאישרתם לנו להיות חלק מהיום שלכם ❤️</p>
+                <div class="menu-corner-ornament bottom-left"></div>
+                <div class="menu-corner-ornament bottom-right"></div>
+            </footer>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <h2><bdi lang="en" dir="ltr">ROASTÉ &amp; BUTTER</bdi></h2>
+        <p><bdi lang="en" dir="ltr">Roasted with care. Baked with love.</bdi></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
